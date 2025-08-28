@@ -1,67 +1,107 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Notes — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes & Blog — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html" aria-current="page">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html" aria-current="page">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Notes & Blog</h1>
+        <p>Insights from behind the wheel, game breakdowns and essays on building accessible spaces. Posts are grouped by topic for easy browsing.</p>
+      </div>
+    </section>
+
+    <!-- Category filter (static, no JS filtering for offline simplicity) -->
+    <section>
+      <div class="container">
+        <h2>Gaming Strategies</h2>
+        <article class="card" id="smite-support">
+          <h3>Smite Support: Five Clutch Plays</h3>
+          <p class="post-date">June 30, 2025 • Gaming Strategies</p>
+          <p>Support isn’t about chasing kills; it’s about enabling your team. In this quick guide, I break down five plays that turn the tide: invade on timers, peel like a pro, ward smartly, call rotations early and save your ult for the carry. Each section includes tips and micro‑maps.</p>
+          <p><em>TL;DR:</em> Success in support comes down to vision, communication and patience.</p>
+        </article>
+        <article class="card" id="fps-focus">
+          <h3>FPS Focus Tricks</h3>
+          <p class="post-date">May 10, 2025 • Gaming Strategies</p>
+          <p>Focus drifting in competitive shooters? Try my go‑to hacks: timed breathing before each match, minimising UI clutter, using colour‑blind friendly crosshairs and a mid‑game stretch routine. These small tweaks keep your aim true without burning out.</p>
+          <p><em>TL;DR:</em> Reset your body and environment to keep your crosshair steady.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Personal Reflections</h2>
+        <article class="card" id="rideshare-insights">
+          <h3>What Ride‑Share Driving Taught Me About Communication</h3>
+          <p class="post-date">July 12, 2025 • Personal Reflections</p>
+          <p>Every passenger is a mini masterclass in communication. I share stories about reading body language, balancing silence and conversation, and how my ADHD helps me think on my feet. These lessons have improved my empathy and dialogue skills far beyond the car.</p>
+          <p><em>TL;DR:</em> Listening actively and offering choice fosters trust and genuine connection.</p>
+        </article>
+        <article class="card" id="adhd-route-hacks">
+          <h3>ADHD Route Hacks I Use While Driving</h3>
+          <p class="post-date">April 22, 2025 • Personal Reflections</p>
+          <p>Maintaining focus on the road can be a challenge when your mind loves to wander. In this post I outline my pre‑drive checklist, the timers I set for decisions and how I use playlists to keep my mood aligned with my driving goals.</p>
+          <p><em>TL;DR:</em> Structure and sensory management keep me efficient and relaxed behind the wheel.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Project Updates & Idea Essays</h2>
+        <article class="card" id="athena-tiers">
+          <h3>Athena’s Tiers: Draft Pricing & Perks</h3>
+          <p class="post-date">May 30, 2025 • Project Update</p>
+          <p>I share an early outline of membership tiers for Athena’s Place (Zeus VIP, Apollo Regular, Artemis Budget) along with perks like free grooming, treats, and photo sessions. Feedback welcome!</p>
+          <p><em>TL;DR:</em> Tiered memberships let us offer accessible pricing while still providing premium experiences.</p>
+        </article>
+        <article class="card" id="ocr-progress">
+          <h3>OCR Tool Progress</h3>
+          <p class="post-date">March 14, 2025 • Project Update</p>
+          <p>The Android OCR toolkit now supports categorising screenshots by ride type and exporting to CSV. Next up: custom tagging and summary statistics. I’m excited about how this can empower drivers to advocate for fairer pay.</p>
+          <p><em>TL;DR:</em> Turning raw screenshots into insight gives drivers leverage and clarity.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section">
-    <h1>Notes</h1>
-    <p class="small">Filter by category. Posts follow: hook → sub‑headers → steps/lists → summary bullets.</p>
-    <div class="badges">
-      <button class="control-btn cat-btn" data-action="cat" data-tag="all" aria-pressed="true">All</button>
-      <button class="control-btn cat-btn" data-action="cat" data-tag="gaming">Gaming Strategies</button>
-      <button class="control-btn cat-btn" data-action="cat" data-tag="reflections">Personal Reflections</button>
-      <button class="control-btn cat-btn" data-action="cat" data-tag="updates">Project Updates & Idea Essays</button>
-    </div>
-  </section>
-  <article class="card" data-cat="reflections" id="2025-08-27-adhd-route-hacks">
-    <h2>ADHD Route Hacks I Use While Driving</h2>
-    <p class="small">August 27, 2025 • Personal Reflections</p>
-    <p><strong>Hook:</strong> Small constraints beat willpower — especially behind the wheel.</p>
-    <h3>What helps</h3>
-    <ul><li>Pre‑decide routes for common trips.</li><li>Time‑box choices (e.g., 10 seconds to pick a turn).</li><li>Keep tools visible and simple.</li></ul>
-    <h3>Summary</h3>
-    <ul><li>Decide once.</li><li>Reduce options.</li><li>Make the good path obvious.</li></ul>
-  </article>
-  <article class="card" data-cat="gaming" id="2025-08-26-smite-support">
-    <h2>Smite Support: 5 Clutch Plays That Win Fights</h2>
-    <p class="small">August 26, 2025 • Gaming Strategies</p>
-    <p><strong>Hook:</strong> Support isn’t passive — it’s the first swing.</p>
-    <h3>Plays</h3>
-    <ol><li>Ward before the fight, not after.</li><li>Peel with stuns, not damage.</li><li>Ult to force cooldowns.</li><li>Ping pathways early.</li><li>Reset after objective, don’t coin‑flip.</li></ol>
-    <h3>Summary</h3>
-    <ul><li>Information > impulse.</li><li>Peel > chase.</li><li>Reset > tilt.</li></ul>
-  </article>
-  <article class="card" data-cat="updates" id="2025-08-25-athenas-tiers">
-    <h2>Athena’s Place: Drafting Membership Tiers</h2>
-    <p class="small">August 25, 2025 • Project Updates & Idea Essays</p>
-    <p><strong>Hook:</strong> The goal is culture, not chaos.</p>
-    <h3>Sub‑headers</h3>
-    <ul><li>Screening and rules keep play safe.</li><li>Zeus VIP (~$199.99) bundles grooming and perks.</li><li>Theme nights and meetups build community.</li></ul>
-    <h3>Summary</h3>
-    <ul><li>Rules‑first experience.</li><li>Tiered access funds quality.</li><li>Community > churn.</li></ul>
-  </article>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </footer>
+</body>
+</html>

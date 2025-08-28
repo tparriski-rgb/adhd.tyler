@@ -1,38 +1,173 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Ventures — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
-
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html" aria-current="page">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventures — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html" aria-current="page">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Flagship Ventures</h1><p class="small">The big plays. Colors indicate energy—not chaos.</p></section>
-  <section class="grid grid-3 section">
-    <div class="card"><h3>Paws of Olympus / Athena’s Place</h3><p>Rules‑first indoor dog park with café/bar, events, and solar offset.</p></div>
-    <div class="card"><h3>Olympus Ride Services</h3><p>Flat‑rate, reliable private rides with consistent comms and ritual touches.</p></div>
-    <div class="card"><h3>Android OCR App</h3><p>On‑device OCR for screenshots with privacy‑first design.</p></div>
-    <div class="card"><h3>Universal Screenshot Analyzer</h3><p>PC tool to normalize receipts and statements into one dataset.</p></div>
-    <div class="card"><h3>Earnings Calculator</h3><p>Multi‑ride profit clarity for drivers.</p></div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Ventures</h1>
+        <p>This page is a map of my big ideas — from flagship businesses to advocacy campaigns, micro‑products and event concepts. Use the sections below to explore.</p>
+      </div>
+    </section>
+
+    <!-- Flagships -->
+    <section>
+      <div class="container">
+        <h2>Flagship Ventures</h2>
+        <div class="card-grid">
+          <article class="card" id="venture-athenas-place">
+            <h3>Paws of Olympus / Athena’s Place</h3>
+            <p>A membership indoor dog park and café built as a community hub, with tiered membership pricing (Zeus VIP at $199.99/month). Offers daycare, grooming, training, boarding and events with solar energy offsets and strict behavioural rules for a clean, safe environment.</p>
+          </article>
+          <article class="card" id="venture-olympus-ride-services">
+            <h3>Olympus Ride Services</h3>
+            <p>A premium private driving brand that provides flat‑rate rides in my Highlander with consistent communication, small perks and no surprise fees. Includes deposit handling, confirmation scripts and a referral program.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rideshare Tools & Advocacy -->
+    <section>
+      <div class="container">
+        <h2>Rideshare Tools & Advocacy</h2>
+        <div class="card-grid">
+          <article class="card" id="venture-android-app">
+            <h3>Android OCR App</h3>
+            <p>On‑device OCR for Lyft screenshots on a Samsung S23 Ultra. Categorises and logs ride earnings offline with optional Drive backup. Revenues come from paid app tiers or consulting.</p>
+          </article>
+          <article class="card" id="venture-universal-analyzer">
+            <h3>Universal Screenshot Analyzer</h3>
+            <p>A desktop tool/CLI that watches a folder, OCRs receipts and statements and normalises them into a single dataset with a simple dashboard. Open‑core business model.</p>
+          </article>
+          <article class="card" id="venture-earnings-calculator">
+            <h3>Multi‑Ride Earnings Calculator</h3>
+            <p>An interactive calculator for inputting multiple rides with time, distance and bonuses to derive true profit metrics. Offers a freemium tier with pro analytics.</p>
+          </article>
+          <article class="card" id="venture-acceptance-strategy">
+            <h3>Acceptance‑Rate Strategy & Aid</h3>
+            <p>A guide and printable decision aid to help drivers maintain ≥90% acceptance while cherry‑picking good rides. Uses simple thresholds and charts tied to Analyzer outputs.</p>
+          </article>
+          <article class="card" id="venture-evidence-campaign">
+            <h3>How Lyft Nudges Drivers</h3>
+            <p>A data campaign with an interactive deck, charts and a complaint outline demonstrating how driver apps manipulate behaviour (e.g., Turbo acceptance pressure). Intended for media and policymakers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Auto & Merch -->
+    <section>
+      <div class="container">
+        <h2>Auto & Merch</h2>
+        <div class="card-grid">
+          <article class="card" id="venture-led-auto">
+            <h3>LED & Auto Mods Microbusiness</h3>
+            <p>An installation and coaching service for ambient lighting, centralised LED control and third‑row charging ports in vehicles. Transparent pricing and photo portfolio.</p>
+          </article>
+          <article class="card" id="venture-monster-pixel">
+            <h3>Monster Pixel Packs & Pixel‑Art Library</h3>
+            <p>A set of prebuilt message packs for driver LED signs (“U lift my ♥️”) and a pixel‑art prompt library for custom animations. Sold as digital downloads.</p>
+          </article>
+          <article class="card" id="venture-respect-riders">
+            <h3>Respect Riders Sticker Line</h3>
+            <p>A line of stickers with a helmet graphic and “I Respect Riders” to signal allyship to the motorcycle community. Comes in matte and reflective finishes.</p>
+          </article>
+          <article class="card" id="venture-perk-cards">
+            <h3>Thank‑You & Perk Cards</h3>
+            <p>Classy cards for passengers offering a perk (music control, ask me anything) and a soft reminder to rebook directly. Encourages tips and repeat bookings.</p>
+          </article>
+          <article class="card" id="venture-nd-shirts">
+            <h3>ND‑Themed T‑Shirt Line</h3>
+            <p>An apparel line featuring smart and edgy neurodivergent slogans, available in family‑friendly and NSFW variants. Made via print‑on‑demand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & Media -->
+    <section>
+      <div class="container">
+        <h2>Content & Media</h2>
+        <div class="card-grid">
+          <article class="card" id="venture-qa-carousel">
+            <h3>Driver–Passenger Q&A Series</h3>
+            <p>An Instagram carousel and reel series showing both sides of common ride‑share interactions with commentary. Aims to build empathy and laughs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transit & Consulting -->
+    <section>
+      <div class="container">
+        <h2>Transit & Consulting</h2>
+        <div class="card-grid">
+          <article class="card" id="venture-via-microtransit">
+            <h3>VIA Microtransit Partnership</h3>
+            <p>A proposal to create a hub‑and‑spoke microtransit system connecting airports, downtowns and event centres with scheduled, dynamic routing.</p>
+          </article>
+          <article class="card" id="venture-hops-hounds-consulting">
+            <h3>Hops & Hounds Consulting</h3>
+            <p>A consulting mini‑deck with high‑ROI tweaks for a competitor dog park (signage, QR prompts, breed nights), aiming to build goodwill and potential collaboration.</p>
+          </article>
+          <article class="card" id="venture-event-marketing">
+            <h3>Event Marketing Services</h3>
+            <p>Marketing packages for authors, musicians and local creators — including PDF one‑sheets, signage templates and content schedules.</p>
+          </article>
+          <article class="card" id="venture-popup-lounge">
+            <h3>Pop‑Up After‑Hours Lounge</h3>
+            <p>An invite‑only, mellow lounge with music, board games, ND‑friendly zones and BYOB lean. Designed for adults seeking calm socialising.</p>
+          </article>
+          <article class="card" id="venture-ghost-counter">
+            <h3>Ghost Counter</h3>
+            <p>A centralised counter consolidating fast‑food takeout from multiple brands in one location, reducing wait times and miles for drivers.</p>
+          </article>
+          <article class="card" id="venture-cablebox-reinvent">
+            <h3>Cable‑Box Reinvention</h3>
+            <p>Reimagining the set‑top box as a community hub displaying event notices, transit overlays, merchant promotions and neighbourhood alerts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

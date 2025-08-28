@@ -1,42 +1,125 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Services — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
-
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html" aria-current="page">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Services & Pricing</h1><p class="small">Edit this file to change prices. Simple and offline.</p></section>
-  <div class="grid grid-2 section">
-    <div class="card"><h3>Rideshare Coaching</h3><p>$75 / 60 min</p><ul><li>Small‑talk scripts & icebreakers</li><li>Pickup/drop‑off routines</li><li>Confidence drills</li></ul></div>
-    <div class="card"><h3>Ambient Car Lighting Install</h3><p>$150 flat (+$25 per extra zone)</p><ul><li>Factory‑style hardwiring</li><li>Multi‑zone setup</li><li>Clean cable routes</li></ul></div>
-    <div class="card"><h3>Mobile Detailing — Basic</h3><p>$75</p><ul><li>Exterior wash & sealant</li><li>Interior vacuum & wipe‑down</li></ul></div>
-    <div class="card"><h3>Mobile Detailing — Premium</h3><p>$125</p><ul><li>Upholstery shampoo</li><li>Dashboard/console deep clean</li></ul></div>
-    <div class="card"><h3>Sticker & Branding Design</h3><p>Varies</p><ul><li>Custom decal ($20 ea)</li><li>Install ($10 ea)</li><li>Business card layout ($35)</li></ul></div>
-    <div class="card"><h3>Dashcam & Accessory Mounting</h3><p>$80 flat</p><ul><li>Hardwire dashcam/phone mounts</li><li>Discreet cables</li><li>3rd‑row USB add‑on</li></ul></div>
-    <div class="card"><h3>Career Coaching & Resume Tune‑Up</h3><p>$100 / 60 min</p><ul><li>Role‑specific resume</li><li>Mock interviews</li><li>Networking strategies</li></ul></div>
-    <div class="card"><h3>ADHD/Autism Self‑Care Consulting</h3><p>$80 / 45 min</p><ul><li>Routines & reminders</li><li>Sensory‑friendly setups</li><li>Energy management</li></ul></div>
-    <div class="card"><h3>Pet‑Friendly Upgrades</h3><p>Varies</p><ul><li>Seat covers & barriers ($50)</li><li>Auto water bowl install ($40)</li><li>Cleaning kit ($10)</li></ul></div>
-  </div>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Services & Pricing</h1>
+        <p>Transparent, straightforward packages for rides, consulting, installations and content. Edit the figures below directly in this file to adjust pricing — no database required.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Driving Services</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Local Ride (within 10 miles)</h3>
+            <p>Flat‑rate ride in my Highlander. Includes complimentary water and music control.</p>
+            <p><strong>Price:</strong> $25 per trip</p>
+          </article>
+          <article class="card">
+            <h3>Airport Transfer</h3>
+            <p>Stress‑free pick‑up or drop‑off at San Antonio or Austin airports. Includes 30 minutes of wait time.</p>
+            <p><strong>Price:</strong> $40 per trip</p>
+          </article>
+          <article class="card">
+            <h3>Hourly Retainer</h3>
+            <p>Reserve my vehicle and time for multiple stops or events. Ideal for errands, tours or VIP guests.</p>
+            <p><strong>Price:</strong> $60 per hour (2‑hour minimum)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Consulting & Events</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Behaviour Tech Consulting</h3>
+            <p>One‑on‑one sessions or small group workshops covering behaviour modification basics, neurodivergent support and building inclusive environments.</p>
+            <p><strong>Price:</strong> $85 per hour</p>
+          </article>
+          <article class="card">
+            <h3>Event Marketing Packages</h3>
+            <p>Lightweight marketing support for local creators — brochures, QR codes, hashtags and schedule planning.</p>
+            <p><strong>Price:</strong> Starting at $200</p>
+          </article>
+          <article class="card">
+            <h3>Pop‑Up Lounge Design</h3>
+            <p>Consulting on creating ND‑friendly, relaxing pop‑up lounge experiences including layout, lighting and games.</p>
+            <p><strong>Price:</strong> Custom — contact for quote</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Installations & Merch</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>LED & Auto Mods</h3>
+            <p>Installation or coaching services for ambient lighting, centralised LED control and additional charging ports in your vehicle.</p>
+            <p><strong>Price:</strong> Starting at $150</p>
+          </article>
+          <article class="card">
+            <h3>Respect Riders Sticker Pack</h3>
+            <p>Two high‑quality stickers (one matte, one reflective) and an ally pledge QR code.</p>
+            <p><strong>Price:</strong> $10 per pack</p>
+          </article>
+          <article class="card">
+            <h3>Neurodivergent T‑Shirts</h3>
+            <p>On‑demand tees with empowering, witty slogans. Available in multiple colours and cuts.</p>
+            <p><strong>Price:</strong> $30 each</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="footnote">
+      <p>Prices are subject to change based on distance, complexity or customisation. Contact me directly via the contact page or Instagram (<a href="https://instagram.com/adhd.tyler" target="_blank" rel="noopener">@adhd.tyler</a>) for tailored quotes and bundles.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

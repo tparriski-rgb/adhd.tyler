@@ -1,36 +1,98 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Tools — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
-
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html" aria-current="page">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html" aria-current="page">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Tools</h1><p class="small">Offline‑capable utilities. Drop files into <code>assets/tools</code> and link them here.</p></section>
-  <section class="grid grid-3 section">
-    <div class="card"><h3>Android OCR for Ride Screenshots</h3><p>On‑device OCR with JSON/CSV export. Works offline.</p></div>
-    <div class="card"><h3>Universal Screenshot Analyzer (PC)</h3><p>Folder watch → OCR → normalize → SQLite/CSV → dashboard.</p></div>
-    <div class="card"><h3>Earnings Calculator (Multi‑Ride)</h3><p>See true profit after gas and time. Spreadsheet + web.</p></div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Tools</h1>
+        <p>Here are the software tools and calculators I’ve built (or am building) to empower drivers and neurodivergent creators. Most are open‑source or free to download.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card-grid">
+          <!-- Tool: Android OCR Toolkit -->
+          <article class="card" id="android-ocr">
+            <h3>Android OCR Toolkit</h3>
+            <p>This app runs locally on your Android phone and converts ride screenshots into structured data. It categorises offers, logs earnings and works offline with optional Google Drive backup.</p>
+            <div class="tags"><span class="tag">#android</span><span class="tag">#OCR</span><span class="tag">#privacy</span></div>
+            <p><strong>Status:</strong> In beta testing.</p>
+            <a href="assets/tools/android-ocr.zip" class="btn btn-secondary" download>Download (beta)</a>
+          </article>
+          <!-- Tool: Universal Screenshot Analyzer -->
+          <article class="card" id="screenshot-analyzer">
+            <h3>Universal Screenshot Analyzer</h3>
+            <p>A desktop CLI that ingests ride‑share screenshots, receipts and statements, then normalises them into a single SQLite/CSV dataset with summary dashboards.</p>
+            <div class="tags"><span class="tag">#desktop</span><span class="tag">#OCR</span><span class="tag">#analytics</span></div>
+            <p><strong>Status:</strong> CLI prototype ready.</p>
+            <a href="assets/tools/screenshot-analyzer.zip" class="btn btn-secondary" download>Download (CLI)</a>
+          </article>
+          <!-- Tool: Earnings Calculator -->
+          <article class="card" id="earnings-calculator">
+            <h3>Earnings Calculator</h3>
+            <p>A web‑based tool that lets drivers input multiple ride details — distance, time, bonuses and fuel costs — and outputs true profit metrics. Designed to optimise acceptance and planning.</p>
+            <div class="tags"><span class="tag">#web</span><span class="tag">#calculator</span><span class="tag">#finance</span></div>
+            <p><strong>Status:</strong> Prototype concept.</p>
+            <a href="" class="btn btn-secondary" download style="display:none;">Download</a>
+          </article>
+          <!-- Tool: Acceptance Strategy Aid -->
+          <article class="card" id="acceptance-strategy">
+            <h3>Acceptance Rate Decision Aid</h3>
+            <p>A simple, printable decision tree that helps you accept or decline rides while keeping a high acceptance rate. Includes pay per mile/minute thresholds and hourly targets.</p>
+            <div class="tags"><span class="tag">#rideshare</span><span class="tag">#strategy</span><span class="tag">#printable</span></div>
+            <p><strong>Status:</strong> Available.</p>
+            <a href="assets/tools/acceptance-decision-tree.pdf" class="btn btn-secondary" download>Download PDF</a>
+          </article>
+          <!-- Add your own tool -->
+          <article class="card">
+            <h3>Have a Tool Idea?</h3>
+            <p>If you’ve built or need a tool in this space, let’s collaborate. I’m always looking for new ideas to automate tedious tasks and empower our community.</p>
+            <div class="tags"><span class="tag">#collaborate</span><span class="tag">#ideas</span></div>
+            <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

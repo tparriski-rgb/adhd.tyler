@@ -1,33 +1,84 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Contact — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
-
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Contact</h1><p class="small">Fastest way: DM me on Instagram.</p>
-    <div class="socials"><a href="https://instagram.com/adhd.tyler" target="_blank" rel="noopener">📷 @adhd.tyler</a></div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Have feedback, want to collaborate or just want to say hi? Let’s connect — I’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>I’m most active on social media. Feel free to send me a message on Instagram or drop a quick email. I’ll do my best to respond promptly.</p>
+        <ul>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/adhd.tyler" target="_blank" rel="noopener">@adhd.tyler</a></li>
+          <li><strong>Email:</strong> <a href="mailto:tyler@example.com">tyler@example.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Send a Message</h2>
+        <p>Prefer to reach out directly? Use this simple form — it will open your email client with your message pre‑filled.</p>
+        <form action="mailto:tyler@example.com" method="post" enctype="text/plain" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

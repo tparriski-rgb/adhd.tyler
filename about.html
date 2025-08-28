@@ -1,48 +1,75 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>About — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>Hi, I’m Tyler — ride‑share driver, behaviour‑tech student and relentless idea machine. I built this site as a public sandbox for my projects and passions.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>My Story</h2>
+        <p>I’ve spent the last few years crisscrossing San Antonio as a ride‑share driver, meeting people from all walks of life. Those conversations sparked my interest in human behaviour and eventually led me to study to become a registered behavioural technician. Along the way, I discovered how neurodivergence shapes my perception — my ADHD and autistic traits are not obstacles but sources of creativity, empathy and determination.</p>
+        <p>In my downtime, I dream up ways to rebuild community: a safe, indoor dog park and café where everyone — two‑legged and four‑legged — can belong; tools that help drivers understand their earnings and work smarter; strategies for making games more accessible and fun; and content that helps neurodivergent folks navigate daily life with humour and confidence.</p>
+        <p>I’m a tinkerer at heart. Whether it’s hacking together ambient lighting for my car or designing an affirmation card game, I love bridging technical know‑how with human connection. This site is my digital lab notebook: a place to share my experiments, gather feedback and find collaborators.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Skills & Interests</h2>
+        <ul>
+          <li>Behaviour tech foundations &amp; applied behaviour analysis</li>
+          <li>DIY automotive lighting and electronics mods</li>
+          <li>Community development and sensory‑friendly design</li>
+          <li>Game strategy and team communication (Smite, FPS)</li>
+          <li>Creative writing, ideation and neurodivergent advocacy</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section">
-    <h1>Hi, I’m Tyler — ride‑share driver, aspiring behavior tech, and a relentless idea machine.</h1>
-    <p>I build things that make everyday life smoother: safer rides, calmer spaces, and tools that quietly do the work. My brain runs fast; structure is how I steer it.</p>
-    <p>I’m neurodivergent (ADHD/autism) and I design for brains like mine: clear labels, one idea per chunk, and easy off‑ramps when attention shifts. You’ll see big targets, clean spacing, and features like palette switching, Light Mode, Reduce Motion, and Focus Mode.</p>
-    <p>Community matters. From dog‑park culture to driver advocacy, I’m into systems that help people feel safe, respected, and included — especially folks who get left out.</p>
-    <p>Reach out if you want to build something useful together.</p>
-    <div class="card">
-      <h2>Skills & Interests</h2>
-      <ul>
-        <li>Behavior tech basics & communication strategies</li>
-        <li>DIY auto mods (clean hardwiring, ambient lighting)</li>
-        <li>Rideshare ops, route planning, and customer experience</li>
-        <li>ND‑friendly self‑care systems and tools</li>
-        <li>Gaming strategy (Smite, FPS fundamentals)</li>
-        <li>Light design, branding, and micro‑products</li>
-      </ul>
-    </div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </footer>
+</body>
+</html>
