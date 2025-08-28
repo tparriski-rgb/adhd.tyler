@@ -5,8 +5,7 @@
 <div class="container section">
   <h1>🔎 Healthcheck</h1>
   <p class="small">This checks for the files your site expects. If a row is red, upload that file at the repo root.</p>
-  <table class="services-table" id="t"><thead><tr><th>Path</th><th>Status</th><th>HTTP</th></tr></thead><tbody></tbody></table>
-  <p class="small">Tip: Filenames are case-sensitive. Use relative paths like <code>assets/css/style.css</code> (no leading slash).</p>
+  <table id="t"><thead><tr><th>Path</th><th>Status</th><th>HTTP</th></tr></thead><tbody></tbody></table>
 </div>
 <script>
 const paths=['index.html','about.html','projects.html','ideas.html','blog.html','tools.html','services.html','ventures.html','contact.html','404.html','assets/css/style.css','assets/js/main.js'];
@@ -14,11 +13,11 @@ const tbody=document.querySelector('#t tbody');
 async function checkOne(p){
   try{ const res=await fetch(p,{cache:'no-store'});
     const tr=document.createElement('tr');
-    tr.innerHTML=`<td><a href="${p}">${p}</a></td><td class="${res.ok?'ok':'bad'}">${res.ok?'OK':'Missing'}</td><td>${res.status}</td>`;
+    tr.innerHTML=`<td><a href="${p}">${p}</a></td><td style="font-weight:700;color:${res.ok?'#16a34a':'#dc2626'}">${res.ok?'OK':'Missing'}</td><td>${res.status}</td>`;
     tbody.appendChild(tr);
   }catch(e){
     const tr=document.createElement('tr');
-    tr.innerHTML=`<td>${p}</td><td class="bad">Error</td><td>${String(e).slice(0,80)}</td>`;
+    tr.innerHTML=`<td>${p}</td><td style="font-weight:700;color:#dc2626">Error</td><td>${String(e).slice(0,80)}</td>`;
     tbody.appendChild(tr);
   }
 }

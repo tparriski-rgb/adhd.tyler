@@ -6,7 +6,7 @@
 
 <header class="header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler — Idea Playground</a>
+    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
     <nav class="nav">
       <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
       <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
@@ -14,7 +14,8 @@
     <div class="controls" role="toolbar" aria-label="View controls">
       <button class="control-btn" data-action="font-">A−</button>
       <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="theme" aria-pressed="false">Dark</button>
+      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
+      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
       <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
       <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
     </div>
@@ -24,9 +25,14 @@
   <section class="hero">
     <div class="container">
       <h1>Ideas in drive. Projects with heart.</h1>
-      <p>Public hub for projects, ideas, and notes — built to be breezy to scan and easy to navigate.</p>
-      <p><a class="btn" href="projects.html">Explore my projects</a></p>
-      <div class="socials" style="margin-top:.75rem"><a href="https://instagram.com/adhd.tyler" target="_blank" rel="noopener">📷 @adhd.tyler</a></div>
+      <p>Public hub for projects, ideas, and notes — now with bold color. Use 🎨 to try different palettes.</p>
+      <div class="cta">
+        <a class="btn" href="projects.html">Explore my projects</a>
+        <a class="btn btn-outline" href="blog.html">Read notes</a>
+      </div>
+      <div class="socials" style="margin-top:.9rem">
+        <a href="https://instagram.com/adhd.tyler" target="_blank" rel="noopener">📷 @adhd.tyler</a>
+      </div>
     </div>
   </section>
 
@@ -34,18 +40,21 @@
     <h2>Featured</h2>
     <div class="grid grid-3">
       <div class="card">
+        <div class="pills"><span class="pill">New</span></div>
         <h3>Latest note</h3>
         <p><a href="blog.html#2025-08-27-adhd-route-hacks">ADHD Route Hacks I Use While Driving</a></p>
         <p class="small">Simplify choices. Time‑box decisions. Keep tools visible.</p>
       </div>
       <div class="card">
-        <h3>Flagship: Athena’s Place</h3>
+        <div class="pills"><span class="pill">Flagship</span></div>
+        <h3>Athena’s Place</h3>
         <p>Members‑only indoor dog park + café/bar with strict rules and solar offset.</p>
         <p><a class="btn btn-outline" href="ventures.html#paws-of-olympus">See the venture</a></p>
       </div>
       <div class="card">
-        <h3>Current focus</h3>
-        <p>Shaping a multi‑ride earnings calculator and a PC screenshot analyzer.</p>
+        <div class="pills"><span class="pill">Focus</span></div>
+        <h3>Smarter driver tools</h3>
+        <p>Multi‑ride earnings calculator + screenshot analyzer.</p>
         <p><a class="btn btn-outline" href="tools.html">Peek tools</a></p>
       </div>
     </div>
@@ -54,14 +63,23 @@
   <section class="section container">
     <h2>Quick Sections</h2>
     <div class="grid grid-3">
-      <div class="card"><h3>Projects</h3><p>High‑intent builds with clear next steps.</p><p><a class="btn btn-outline" href="projects.html">Open Projects</a></p></div>
-      <div class="card"><h3>Ideas</h3><p>An organized idea garden with tags and buckets.</p><p><a class="btn btn-outline" href="ideas.html">Open Ideas</a></p></div>
-      <div class="card"><h3>Notes</h3><p>Gaming strategies, reflections, and project updates.</p><p><a class="btn btn-outline" href="blog.html">Open Notes</a></p></div>
+      <div class="card">
+        <h3>Projects</h3><p>High‑intent builds with clear next steps.</p>
+        <p><a class="btn" href="projects.html">Open Projects</a></p>
+      </div>
+      <div class="card">
+        <h3>Ideas</h3><p>An organized idea garden with tags and buckets.</p>
+        <p><a class="btn" href="ideas.html">Open Ideas</a></p>
+      </div>
+      <div class="card">
+        <h3>Notes</h3><p>Gaming strategies, reflections, and project updates.</p>
+        <p><a class="btn" href="blog.html">Open Notes</a></p>
+      </div>
     </div>
   </section>
 </main>
 <footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Calm, legible, distraction‑light. <a href="about.html">About</a></p>
-<p class="footnote">I’m openly neurodivergent. I design this site for low cognitive load: simple language, big targets, dark mode, and Focus Mode.</p>
+<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
+<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
 </div></footer>
 </body></html>
