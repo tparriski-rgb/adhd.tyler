@@ -1,52 +1,121 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Ideas — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideas — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html" aria-current="page">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="ideas.html" aria-current="page">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Ideas</h1>
+        <p>Welcome to my idea garden — an organised collection of brainstorms, half‑baked concepts and future experiments. Feel free to explore and get inspired.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Community Rebuilding</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Sensory‑Friendly Community Hub</h3>
+            <p>A network of safe, calming spaces where neurodivergent folks can gather, work, play and support one another. Features include sensory rooms, clear signage and friendly staff.</p>
+            <div class="tags"><span class="tag">#community</span><span class="tag">#accessibility</span></div>
+          </article>
+          <article class="card">
+            <h3>Microtransit Hubs</h3>
+            <p>Pop‑up microtransit hubs bridging airports, downtowns and event venues with pre‑scheduled shuttle loops. Helps reduce isolation and offers predictable, affordable rides.</p>
+            <div class="tags"><span class="tag">#mobility</span><span class="tag">#events</span></div>
+          </article>
+          <article class="card">
+            <h3>After‑Hours Lounge</h3>
+            <p>An invite‑only, mellow pop‑up lounge featuring board games, soft lighting and ND‑friendly zones. A space to socialise without the chaos of a bar scene.</p>
+            <div class="tags"><span class="tag">#social</span><span class="tag">#events</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>ND‑Friendly Media</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>ADHD Superhero Comic</h3>
+            <p>A comic series starring an ADHD hero whose superpower is hyperfocus. Stories tackle distractions, resilience and friendship with humour and honesty.</p>
+            <div class="tags"><span class="tag">#comics</span><span class="tag">#representation</span></div>
+          </article>
+          <article class="card">
+            <h3>ND Life Hacks Podcast</h3>
+            <p>A podcast sharing practical tips, Q&A and interviews around living well as a neurodivergent adult. Imagine “life design for different brains”.</p>
+            <div class="tags"><span class="tag">#podcast</span><span class="tag">#neurodivergent</span></div>
+          </article>
+          <article class="card">
+            <h3>Conversation Card Game</h3>
+            <p>A deck of questions and prompts to help autistic and ADHD people practise social scripts, active listening and empathy. Designed for game nights or therapy sessions.</p>
+            <div class="tags"><span class="tag">#game</span><span class="tag">#social</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Rides & Tools</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Acceptance Rate Strategy</h3>
+            <p>A rules‑light decision tree to help ride‑share drivers keep high acceptance while still cherry‑picking profitable trips. Includes thresholds for pay/mile, pay/minute and estimated hourly earnings.</p>
+            <div class="tags"><span class="tag">#rideshare</span><span class="tag">#toolkit</span></div>
+          </article>
+          <article class="card">
+            <h3>Respect Riders Sticker</h3>
+            <p>Helmet graphic and slogan (“I Respect Riders”) to signal motorcycle allyship. Comes in matte and reflective options, and includes a QR code pledge page.</p>
+            <div class="tags"><span class="tag">#merch</span><span class="tag">#advocacy</span></div>
+          </article>
+          <article class="card">
+            <h3>Neurodivergent T‑Shirt Line</h3>
+            <p>A series of affirming, witty T‑shirts featuring ADHD/autistic slogans in family‑friendly and NSFW variants. Built on a print‑on‑demand platform.</p>
+            <div class="tags"><span class="tag">#merch</span><span class="tag">#identity</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Ideas</h1><p class="small">Buckets help you skim fast and dive where you care.</p></section>
-  <section class="section">
-    <h2>Community Rebuilding Ideas</h2>
-    <div class="grid grid-3">
-      <div class="card"><h3>Rider Ally Sticker</h3><p>Reflective decal + pledge QR to signal “you’re safe with me”.</p><div class="tags"><span class="tag">Allyship</span><span class="tag">Micro‑product</span></div></div>
-      <div class="card"><h3>Event Pop‑Ups (BYOB‑lean)</h3><p>Invite‑only mellow nights with board games and ND‑friendly zones.</p><div class="tags"><span class="tag">Events</span><span class="tag">ND</span></div></div>
-    </div>
-  </section>
-  <section class="section">
-    <h2>ND‑Friendly Media</h2>
-    <div class="grid grid-3">
-      <div class="card"><h3>Q&A Carousel Series</h3><p>Both sides of the rider–driver story to build empathy and laughs.</p><div class="tags"><span class="tag">Content</span><span class="tag">Instagram</span></div></div>
-      <div class="card"><h3>ND T‑Shirt Line</h3><p>Affirming text‑first designs in cozy and vaporwave palettes.</p><div class="tags"><span class="tag">Merch</span></div></div>
-    </div>
-  </section>
-  <section class="section">
-    <h2>Rides & Tools</h2>
-    <div class="grid grid-3">
-      <div class="card"><h3>Android OCR App</h3><p>On‑device OCR for ride screenshots; export to JSON/CSV.</p><div class="tags"><span class="tag">Tools</span><span class="tag">Privacy</span></div></div>
-      <div class="card"><h3>Earnings Calculator</h3><p>Multi‑ride calculator to reveal true profit after gas and time.</p><div class="tags"><span class="tag">Data</span><span class="tag">Drivers</span></div></div>
-    </div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </footer>
+</body>
+</html>

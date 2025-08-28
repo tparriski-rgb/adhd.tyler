@@ -1,26 +1,67 @@
-<!DOCTYPE html><html lang="en"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Healthcheck — ADHD.Tyler</title>
-<link rel="stylesheet" href="assets/css/style.css" />
-<div class="container section">
-  <h1>🔎 Healthcheck</h1>
-  <p class="small">This checks for the files your site expects. If a row is red, upload that file at the repo root.</p>
-  <table id="t"><thead><tr><th>Path</th><th>Status</th><th>HTTP</th></tr></thead><tbody></tbody></table>
-</div>
-<script>
-const paths=['index.html','about.html','projects.html','ideas.html','blog.html','tools.html','services.html','ventures.html','contact.html','404.html','assets/css/style.css','assets/js/main.js'];
-const tbody=document.querySelector('#t tbody');
-async function checkOne(p){
-  try{ const res=await fetch(p,{cache:'no-store'});
-    const tr=document.createElement('tr');
-    tr.innerHTML=`<td><a href="${p}">${p}</a></td><td style="font-weight:700;color:${res.ok?'#16a34a':'#dc2626'}">${res.ok?'OK':'Missing'}</td><td>${res.status}</td>`;
-    tbody.appendChild(tr);
-  }catch(e){
-    const tr=document.createElement('tr');
-    tr.innerHTML=`<td>${p}</td><td style="font-weight:700;color:#dc2626">Error</td><td>${String(e).slice(0,80)}</td>`;
-    tbody.appendChild(tr);
-  }
-}
-(async()=>{ for(const p of paths) await checkOne(p); })();
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Check — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Health Check</h1>
+        <p>This page verifies that all core site files are present. If you see a page name without a link, that file is missing.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Site Files</h2>
+        <ul>
+          <li><a href="index.html">index.html</a> — Home</li>
+          <li><a href="about.html">about.html</a> — About</li>
+          <li><a href="projects.html">projects.html</a> — Projects</li>
+          <li><a href="ideas.html">ideas.html</a> — Ideas</li>
+          <li><a href="blog.html">blog.html</a> — Notes & Blog</li>
+          <li><a href="tools.html">tools.html</a> — Tools</li>
+          <li><a href="services.html">services.html</a> — Services & Pricing</li>
+          <li><a href="ventures.html">ventures.html</a> — Ventures</li>
+          <li><a href="contact.html">contact.html</a> — Contact</li>
+          <li><a href="404.html">404.html</a> — 404 Page</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,171 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tyler — Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Tyler's portfolio — UI, projects, and contact." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADHD.Tyler — Idea Playground</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
 </head>
-<body>
+<body class="palette-ocean">
+  <!-- Header with navigation and utility controls -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">Tyler</a>
-      <nav class="main-nav" id="nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
+      <div class="util-controls" aria-label="Accessibility controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1 class="reveal">Designing clean, usable interfaces.</h1>
-          <p class="muted reveal delay-1">I build thoughtful front-end experiences that are accessible, responsive, and easy to use.</p>
-          <div class="hero-actions reveal delay-2">
-            <a class="btn primary" href="#projects">View projects</a>
-            <a class="btn outline" href="#contact">Get in touch</a>
-          </div>
-        </div>
-        <div class="hero-card reveal delay-3" aria-hidden="true">
-          <!-- Placeholder visual; replace with screenshot or illustration -->
-          <div class="mockup">
-            <div class="mockup-topbar"></div>
-            <div class="mockup-content">
-              <div class="line short"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="grid">
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Ideas in drive. Projects with heart.</h1>
+        <p>Welcome to my Idea Playground — a hub for my latest ventures, creative tools and reflections. I’m Tyler, a ride‑share driver and behaviour tech in training with a passion for community, tech and neurodivergent advocacy.</p>
+        <a href="projects.html" class="btn">Explore my projects</a>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <div class="section-grid">
-        <div class="card reveal">
-          <h2>About me</h2>
-          <p class="muted">I’m Tyler — I design and implement web interfaces with attention to flow, accessibility, and performance. My focus is on delivering clear user experiences while keeping a pragmatic engineering approach.</p>
-          <ul class="skills">
-            <li>HTML & CSS</li>
-            <li>Responsive layout</li>
-            <li>Accessible UI</li>
-            <li>Vanilla JS / small frameworks</li>
-          </ul>
-        </div>
-
-        <div class="card reveal delay-1">
-          <h3>Highlights</h3>
-          <ul class="highlights">
-            <li>Polished portfolio UI</li>
-            <li>Project case studies</li>
-            <li>Fast & accessible interactions</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section container">
-      <h2 class="section-title reveal">Selected projects</h2>
-      <div class="projects-grid">
-        <!-- Repeat these project cards and fill content -->
-        <article class="project-card reveal">
-          <div class="project-media" role="img" aria-label="Project screenshot"></div>
-          <div class="project-body">
-            <h3>Project Title</h3>
-            <p class="muted">Short description — what problem you solved and tech used.</p>
+    <!-- Featured Highlights -->
+    <section class="featured">
+      <div class="container">
+        <h2>Featured</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Paws of Olympus</h3>
+            <p>A Greek‑themed, membership indoor dog park &amp; café offering daycare, grooming, boarding and events — built as a community hub, not just a playground.</p>
+            <span class="pill">Concept</span>
             <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
+              <span class="tag">#Dogs</span>
+              <span class="tag">#Community</span>
             </div>
-            <div class="project-actions">
-              <a class="link" href="#">Live</a>
-              <a class="link" href="#">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal delay-1">
-          <div class="project-media" role="img" aria-label="Project screenshot"></div>
-          <div class="project-body">
-            <h3>Another Project</h3>
-            <p class="muted">Short description — emphasize impact or result.</p>
+            <a href="projects.html#paws-of-olympus" class="btn btn-secondary">Learn more</a>
+          </article>
+          <article class="card">
+            <h3>Android OCR Toolkit</h3>
+            <p>A privacy‑first Android app that converts ride screenshots into structured data to track earnings and filter low offers offline.</p>
+            <span class="pill">In Progress</span>
             <div class="tags">
-              <span>Design</span><span>UI</span>
+              <span class="tag">#Tools</span>
+              <span class="tag">#Drivers</span>
             </div>
-            <div class="project-actions">
-              <a class="link" href="#">Live</a>
-              <a class="link" href="#">Code</a>
+            <a href="tools.html#android-ocr" class="btn btn-secondary">See tool</a>
+          </article>
+          <article class="card">
+            <h3>Smite Support Guide</h3>
+            <p>Master the support role in Smite with easy strategies and team communication tips drawn from my gaming experience.</p>
+            <span class="pill">New</span>
+            <div class="tags">
+              <span class="tag">#Gaming</span>
+              <span class="tag">#Blog</span>
             </div>
-          </div>
-        </article>
-
-        <!-- Add more cards as needed -->
+            <a href="blog.html#smite-support" class="btn btn-secondary">Read post</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section container">
-      <div class="contact-grid">
-        <div class="card reveal">
-          <h2>Let's work together</h2>
-          <p class="muted">I’m available for freelance or contract work. Send a message and I’ll get back to you.</p>
-
-          <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Replace with real form handler')">
-            <label>
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label>
-              <input type="email" name="email" placeholder="Email" required>
-            </label>
-            <label>
-              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
-            </label>
-            <div class="form-actions">
-              <button class="btn primary" type="submit">Send message</button>
-              <a class="link" href="mailto:your@email.com">Or email me</a>
-            </div>
-          </form>
+    <!-- Quick previews -->
+    <section class="quick-preview">
+      <div class="container">
+        <h2>Explore</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Projects</h3>
+            <p>From dog‑friendly venues to creative tech prototypes, see the ventures I’m building and refining.</p>
+            <a href="projects.html" class="btn btn-secondary">View projects</a>
+          </article>
+          <article class="card">
+            <h3>Ideas</h3>
+            <p>An ever‑growing garden of brainstorms — community initiatives, ND‑friendly media concepts and more.</p>
+            <a href="ideas.html" class="btn btn-secondary">Browse ideas</a>
+          </article>
+          <article class="card">
+            <h3>Notes & Blog</h3>
+            <p>Read reflections from the road, gaming strategies and essay‑style updates on my projects and philosophy.</p>
+            <a href="blog.html" class="btn btn-secondary">Catch up</a>
+          </article>
         </div>
-
-        <aside class="card reveal delay-1">
-          <h3>Contact</h3>
-          <p class="muted">Prefer email? Or find me on GitHub and LinkedIn.</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> your@email.com</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/tparriski-rgb">tparriski-rgb</a></li>
-            <li><strong>Location:</strong> Your City</li>
-          </ul>
-        </aside>
       </div>
+    </section>
+
+    <!-- Footnote -->
+    <section class="footnote">
+      <p>As a proudly neurodivergent creator, I prioritise accessibility, clarity and fun in everything I make. This site offers dark mode, colour palettes, text‑size controls and a focus mode to support every brain’s way of browsing.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <small>© Tyler — Built with care & good CSS.</small>
-      <div class="social muted">
-        <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
-      </div>
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="script.js" defer></script>
 </body>
 </html>

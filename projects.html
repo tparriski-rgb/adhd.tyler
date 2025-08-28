@@ -1,57 +1,100 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="assets/css/style.css" />
-<title>Projects — ADHD.Tyler</title>
-<script defer src="assets/js/main.js"></script></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — ADHD.Tyler</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body class="palette-ocean">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">ADHD.Tyler</a></h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="blog.html">Notes</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ventures.html">Ventures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="util-controls">
+        <button id="toggle-palette" title="Change colour palette" aria-label="Change colour palette">🎨</button>
+        <button id="toggle-dark" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+        <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A−</button>
+        <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <button id="toggle-motion" title="Reduce motion" aria-label="Reduce motion">🚫🌀</button>
+        <button id="toggle-focus" title="Focus mode" aria-label="Focus mode">🧘</button>
+      </div>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">ADHD.Tyler<span class="dot"></span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="ideas.html">Ideas</a><a href="blog.html">Notes</a>
-      <a href="tools.html">Tools</a><a href="services.html">Services</a><a href="ventures.html">Ventures</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="controls" role="toolbar" aria-label="View controls">
-      <button class="control-btn" data-action="font-">A−</button>
-      <button class="control-btn" data-action="font+">A+</button>
-      <button class="control-btn" data-action="light" aria-pressed="false">Light</button>
-      <button class="control-btn" data-action="palette" title="Cycle color theme">🎨 Color</button>
-      <button class="control-btn" data-action="motion" aria-pressed="false">Reduce Motion</button>
-      <button class="control-btn" data-action="focus" aria-pressed="false">Focus Mode</button>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>Here you’ll find the ventures I’m actively exploring, designing or building. Each project card includes a quick summary, its current stage and what’s coming next.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card-grid">
+          <!-- Project: Paws of Olympus / Athena’s Place -->
+          <article class="card" id="paws-of-olympus">
+            <h3>Paws of Olympus</h3>
+            <p>A 24/7, climate‑controlled indoor dog park and café with daycare, grooming, boarding and event spaces. Inspired by Greek mythology and built for safety, comfort and community.
+            </p>
+            <span class="pill">Concept</span>
+            <div class="tags">
+              <span class="tag">#dogs</span><span class="tag">#community</span><span class="tag">#events</span>
+            </div>
+            <p><strong>Next steps:</strong> draft concept deck; identify Austin–San Antonio warehouse sites; solicit vendor quotes for turf, HVAC and cleaning equipment.</p>
+          </article>
+          <!-- Project: DIY Car Lighting Mods -->
+          <article class="card" id="car-mods">
+            <h3>DIY Car Lighting Mods</h3>
+            <p>A collection of non‑fiber automotive lighting and electronics modifications tailored for ride‑share drivers. From ambient cabin lighting to custom roof signs, this project enhances the rider experience.</p>
+            <span class="pill">In Progress</span>
+            <div class="tags">
+              <span class="tag">#auto</span><span class="tag">#lighting</span><span class="tag">#rideshare</span>
+            </div>
+            <p><strong>Next steps:</strong> finalise installation menu (ambient lighting, central LED control, third‑row charging port); compile before/after photos; set transparent pricing.</p>
+          </article>
+          <!-- Project: Self‑Care & Communication Toolkit -->
+          <article class="card" id="self-care-toolkit">
+            <h3>Self‑Care &amp; Communication Toolkit</h3>
+            <p>An evolving set of planners, trackers and conversation games designed to support neurodivergent individuals. The goal: make self‑care and social interactions smoother, kinder and more fun.</p>
+            <span class="pill">In Progress</span>
+            <div class="tags">
+              <span class="tag">#neurodivergent</span><span class="tag">#selfcare</span><span class="tag">#communication</span>
+            </div>
+            <p><strong>Next steps:</strong> develop printable habit tracker templates; prototype conversation card game; research digital app options.</p>
+          </article>
+          <!-- Project: Olympus Ride Services -->
+          <article class="card" id="olympus-ride-services">
+            <h3>Olympus Ride Services</h3>
+            <p>My own private driving brand offering flat‑rate, reliable rides with thoughtful extras. Think premium service without the surprise fees or platform pressures.</p>
+            <span class="pill">Launching soon</span>
+            <div class="tags">
+              <span class="tag">#rideshare</span><span class="tag">#business</span><span class="tag">#branding</span>
+            </div>
+            <p><strong>Next steps:</strong> publish pricing &amp; policy sheet; build booking form; design business cards and thank‑you/perk cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ADHD.Tyler — Idea Playground. All rights reserved.</p>
     </div>
-  </div>
-</header>
-<main class="container">
-  <section class="section"><h1>Projects</h1><p class="small">Living threads with scope, status, and next steps.</p></section>
-  <section class="grid grid-3 section">
-    <div class="card">
-      <div class="pills"><span class="pill">Concept</span></div>
-      <h3>Athena’s Place (Paws of Olympus)</h3>
-      <p>Members‑only indoor dog park + café/bar with grooming, events, and strict rules to keep play safe.</p>
-      <div class="tags"><span class="tag">Dogs</span><span class="tag">Community</span><span class="tag">Energy</span></div>
-      <div class="callout"><strong>Next steps</strong><br>Draft 1‑pager → shortlist sites → vendor quotes → membership tiers.</div>
-      <p><a class="btn btn-outline" href="ventures.html#paws-of-olympus">Open venture</a></p>
-    </div>
-    <div class="card">
-      <div class="pills"><span class="pill">In Progress</span></div>
-      <h3>DIY Car Lighting Mods</h3>
-      <p>Factory‑style hardwired ambient lighting: clean routing, multi‑zone control, no glare.</p>
-      <div class="tags"><span class="tag">Auto</span><span class="tag">LED</span><span class="tag">Service</span></div>
-      <div class="callout"><strong>Next steps</strong><br>Photograph 3 installs → pricing menu → booking CTA.</div>
-      <p><a class="btn btn-outline" href="services.html">See services</a></p>
-    </div>
-    <div class="card">
-      <div class="pills"><span class="pill">In Progress</span></div>
-      <h3>Self‑Care & Communication Toolkit</h3>
-      <p>ND‑friendly scripts, checklists, and tiny tools to make daily life lighter.</p>
-      <div class="tags"><span class="tag">ND</span><span class="tag">Routines</span><span class="tag">Coaching</span></div>
-      <div class="callout"><strong>Next steps</strong><br>Draft 5 one‑pagers → record 3 short demos → publish starter pack.</div>
-      <p><a class="btn btn-outline" href="blog.html">Read notes</a></p>
-    </div>
-  </section>
-</main>
-<footer class="footer"><div class="container">
-<p>© 2025 ADHD.Tyler · Built colorful, calm, and accessible. <a href="about.html">About</a></p>
-<p class="footnote">Neurodivergent‑friendly by design: big targets, one idea per chunk, Light/Dark, palette switcher, Reduce Motion, and Focus Mode.</p>
-</div></footer>
-</body></html>
+  </footer>
+</body>
+</html>
